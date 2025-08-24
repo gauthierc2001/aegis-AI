@@ -58,6 +58,7 @@ export default function AboutSection() {
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
     >
+      <div className="h-20 md:h-32"></div>
       {/* Main Headline */}
       <motion.div variants={itemVariants} className="text-center mb-12 md:mb-16 px-4">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
@@ -291,6 +292,5 @@ export default function AboutSection() {
         </motion.div>
       </motion.div>
     </motion.div>
-    <div className="h-20 md:h-32"></div>
   )
 }

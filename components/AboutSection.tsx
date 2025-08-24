@@ -179,7 +179,7 @@ export default function AboutSection() {
 
         {/* Airdrops Card */}
         <motion.div
-          className="group relative h-80 w-full max-w-64 mx-auto"
+          className="group relative h-80 w-full max-w-64 mx-auto ml-8 md:ml-12 lg:ml-16"
           style={{ 
             transformStyle: 'preserve-3d',
             transform: 'rotateX(15deg) rotateY(-25deg) translateZ(30px) scale(1.2)',
@@ -194,7 +194,11 @@ export default function AboutSection() {
             <div className="relative z-10 h-full flex flex-col">
               <div className="flex items-center space-x-3 mb-4">
                                  <div className="w-12 h-12 bg-gradient-to-br from-gold to-gold-light rounded-xl flex items-center justify-center shadow-lg border border-gold/50" style={{ transform: 'translateZ(30px)' }}>
-                   <span className="text-2xl text-black">🎁</span>
+                   <svg className="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
+                     <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
+                     <path d="M19 15L19.74 17.74L22.5 18.5L19.74 19.26L19 22L18.26 19.26L15.5 18.5L18.26 17.74L19 15Z" />
+                     <path d="M5 6L5.74 8.74L8.5 9.5L5.74 10.26L5 13L4.26 10.26L1.5 9.5L4.26 8.74L5 6Z" />
+                   </svg>
                  </div>
                 <h3 className="text-xl font-bold text-gold" style={{ transform: 'translateZ(25px)' }}>Airdrops</h3>
               </div>

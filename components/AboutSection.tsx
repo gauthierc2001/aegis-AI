@@ -91,7 +91,7 @@ export default function AboutSection() {
         
         {/* Burns Card */}
         <motion.div
-          className="group relative h-64 w-full max-w-64 mx-auto"
+          className="group relative h-80 w-full max-w-64 mx-auto"
           style={{ 
             transformStyle: 'preserve-3d',
             transform: 'rotateX(15deg) rotateY(25deg) translateZ(30px) scale(1.2)',
@@ -101,7 +101,7 @@ export default function AboutSection() {
           <div className="absolute inset-0 bg-gradient-to-br from-gold/40 via-gold-light/30 to-gold/20 rounded-2xl blur-3xl group-hover:blur-4xl transition-all duration-700" />
           
                      {/* Metallic Glass effect */}
-           <div className="relative h-full p-4 bg-gradient-to-br from-black/60 via-black/40 to-black/60 backdrop-blur-2xl border border-gold/40 rounded-2xl shadow-2xl transform-gpu overflow-hidden" style={{ transform: 'translateZ(20px)' }}>
+                       <div className="relative h-full p-6 bg-gradient-to-br from-black/60 via-black/40 to-black/60 backdrop-blur-2xl border border-gold/40 rounded-2xl shadow-2xl transform-gpu overflow-hidden" style={{ transform: 'translateZ(20px)' }}>
             {/* Metallic texture overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/5 rounded-2xl" />
             <div className="absolute inset-0 opacity-20" style={{
@@ -138,7 +138,7 @@ export default function AboutSection() {
 
         {/* Buybacks Card */}
         <motion.div
-          className="group relative h-64 w-full max-w-64 mx-auto"
+          className="group relative h-80 w-full max-w-64 mx-auto"
           style={{ 
             transformStyle: 'preserve-3d',
             transform: 'rotateX(15deg) rotateY(25deg) translateZ(30px) scale(1.2)',
@@ -179,7 +179,7 @@ export default function AboutSection() {
 
         {/* Airdrops Card */}
         <motion.div
-          className="group relative h-64 w-full max-w-64 mx-auto"
+          className="group relative h-80 w-full max-w-64 mx-auto"
           style={{ 
             transformStyle: 'preserve-3d',
             transform: 'rotateX(15deg) rotateY(-25deg) translateZ(30px) scale(1.2)',
@@ -222,7 +222,7 @@ export default function AboutSection() {
 
         {/* Redistributions Card */}
         <motion.div
-          className="group relative h-64 w-64"
+          className="group relative h-80 w-full max-w-64 mx-auto"
           style={{ 
             transformStyle: 'preserve-3d',
             transform: 'rotateX(15deg) rotateY(-25deg) translateZ(30px) scale(1.2)',

@@ -87,17 +87,17 @@ export default function AboutSection() {
       </motion.div>
 
                           {/* 3D Cards Section */}
-        <motion.div variants={itemVariants} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-12 mb-24 mt-20 max-w-7xl mx-auto">
+        <motion.div variants={itemVariants} className="flex flex-col space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-8 lg:gap-12 md:space-y-0 mb-24 mt-20 max-w-7xl mx-auto px-4">
         
         {/* Burns Card */}
         <motion.div
-          className="group relative h-80 w-full max-w-64 mx-auto"
+          className="group relative h-72 md:h-80 w-full max-w-64 mx-auto"
           style={{ 
             transformStyle: 'preserve-3d',
-            transform: 'rotateX(15deg) rotateY(25deg) translateZ(30px) scale(1.2)',
+            transform: 'rotateX(5deg) rotateY(10deg) translateZ(10px) scale(1.05)',
           }}
           whileHover={{ 
-            scale: 1.05,
+            scale: 1.02,
             rotateX: 0,
             rotateY: 0,
             translateZ: 0
@@ -145,13 +145,13 @@ export default function AboutSection() {
 
         {/* Buybacks Card */}
         <motion.div
-          className="group relative h-80 w-full max-w-64 mx-auto"
+          className="group relative h-72 md:h-80 w-full max-w-64 mx-auto"
           style={{ 
             transformStyle: 'preserve-3d',
-            transform: 'rotateX(15deg) rotateY(25deg) translateZ(30px) scale(1.2)',
+            transform: 'rotateX(5deg) rotateY(10deg) translateZ(10px) scale(1.05)',
           }}
           whileHover={{ 
-            scale: 1.05,
+            scale: 1.02,
             rotateX: 0,
             rotateY: 0,
             translateZ: 0
@@ -193,13 +193,13 @@ export default function AboutSection() {
 
         {/* Airdrops Card */}
         <motion.div
-          className="group relative h-80 w-full max-w-64 mx-auto"
+          className="group relative h-72 md:h-80 w-full max-w-64 mx-auto"
           style={{ 
             transformStyle: 'preserve-3d',
-            transform: 'rotateX(15deg) rotateY(-25deg) translateZ(30px) scale(1.2)',
+            transform: 'rotateX(5deg) rotateY(-10deg) translateZ(10px) scale(1.05)',
           }}
           whileHover={{ 
-            scale: 1.05,
+            scale: 1.02,
             rotateX: 0,
             rotateY: 0,
             translateZ: 0
@@ -244,13 +244,13 @@ export default function AboutSection() {
 
         {/* Redistributions Card */}
         <motion.div
-          className="group relative h-80 w-full max-w-64 mx-auto"
+          className="group relative h-72 md:h-80 w-full max-w-64 mx-auto"
           style={{ 
             transformStyle: 'preserve-3d',
-            transform: 'rotateX(15deg) rotateY(-25deg) translateZ(30px) scale(1.2)',
+            transform: 'rotateX(5deg) rotateY(-10deg) translateZ(10px) scale(1.05)',
           }}
           whileHover={{ 
-            scale: 1.05,
+            scale: 1.02,
             rotateX: 0,
             rotateY: 0,
             translateZ: 0
@@ -291,5 +291,6 @@ export default function AboutSection() {
         </motion.div>
       </motion.div>
     </motion.div>
+    <div className="h-20 md:h-32"></div>
   )
 }

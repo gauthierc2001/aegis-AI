@@ -45,27 +45,27 @@ export default function Home() {
       {/* Main Content */}
       <div className="relative z-10">
         {/* Hero Section */}
-        <section className="h-screen flex items-center justify-center">
+        <section className="min-h-screen flex items-center justify-center py-20 md:py-0">
           <HeroSection isLoaded={isLoaded} />
         </section>
 
         {/* About Section */}
-        <section className="h-screen flex items-center justify-center">
+        <section className="min-h-screen flex items-center justify-center py-20 md:py-0">
           <AboutSection />
         </section>
 
         {/* Terminal Section */}
-        <section className="h-screen flex items-center justify-center">
+        <section className="min-h-screen flex items-center justify-center py-20 md:py-0">
           <TerminalSection />
         </section>
 
         {/* Vision Section */}
-        <section className="h-screen flex items-center justify-center">
+        <section className="min-h-screen flex items-center justify-center py-20 md:py-0">
           <VisionSection />
         </section>
 
         {/* Closing Section */}
-        <section className="h-screen flex items-center justify-center">
+        <section className="min-h-screen flex items-center justify-center py-20 md:py-0">
           <ClosingSection />
         </section>
 

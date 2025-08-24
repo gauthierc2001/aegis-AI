@@ -89,14 +89,14 @@ export default function TerminalSection() {
   return (
     <motion.div
       ref={ref}
-      className="w-full max-w-[95vw] mx-auto px-6"
+      className="w-full max-w-[95vw] sm:max-w-[90vw] md:max-w-[85vw] lg:max-w-[80vw] mx-auto px-4 sm:px-6"
       variants={containerVariants}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
     >
       {/* Animated Description Text */}
       <motion.div
-        className="text-center mb-12"
+        className="text-center mb-8 sm:mb-12"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : { opacity: 0 }}
         transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
@@ -108,12 +108,12 @@ export default function TerminalSection() {
           transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
         >
           <motion.h2
-            className="text-3xl md:text-4xl lg:text-5xl font-monument text-white mb-6 leading-tight"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-monument text-white mb-4 sm:mb-6 leading-tight px-4"
           >
             {["A", "self-adaptive", "ecosystem", "governed", "by", "an", "autonomous", "AI", "terminal."].map((word, index) => (
               <motion.span
                 key={index}
-                className="inline-block mr-4"
+                className="inline-block mr-2 sm:mr-4"
                 initial={{ opacity: 0, y: 50, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 50, scale: 0.8 }}
                 transition={{
@@ -140,7 +140,7 @@ export default function TerminalSection() {
           transition={{ duration: 1.2, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <motion.p
-            className="text-xl md:text-2xl text-gray-300 font-inter leading-relaxed"
+            className="text-lg sm:text-xl md:text-2xl text-gray-300 font-inter leading-relaxed px-4"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
             transition={{ duration: 1, delay: 1.2, ease: [0.22, 1, 0.36, 1] }}
@@ -148,7 +148,7 @@ export default function TerminalSection() {
             {["Resilient", "during", "volatility,", "designed", "for", "long-term", "growth."].map((word, index) => (
               <motion.span
                 key={index}
-                className="inline-block mr-3"
+                className="inline-block mr-2 sm:mr-3"
                 initial={{ opacity: 0, x: -30 }}
                 animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
                 transition={{
@@ -200,17 +200,17 @@ export default function TerminalSection() {
         </motion.div>
       </motion.div>
 
-      <div className="bg-black/90 backdrop-blur-sm border border-gold/40 rounded-xl p-12 shadow-2xl relative overflow-hidden min-h-[600px] w-full">
+      <div className="bg-black/90 backdrop-blur-sm border border-gold/40 rounded-xl p-6 sm:p-8 md:p-12 shadow-2xl relative overflow-hidden min-h-[400px] sm:min-h-[500px] md:min-h-[600px] w-full">
         {/* Terminal Header */}
-        <div className="flex items-center space-x-3 mb-8">
-          <div className="w-4 h-4 bg-red-500 rounded-full" />
-          <div className="w-4 h-4 bg-yellow-500 rounded-full" />
-          <div className="w-4 h-4 bg-green-500 rounded-full" />
-          <span className="text-gold font-mono text-lg ml-6 font-semibold">Aegis Terminal</span>
+        <div className="flex items-center space-x-2 sm:space-x-3 mb-6 sm:mb-8">
+          <div className="w-3 h-3 sm:w-4 sm:h-4 bg-red-500 rounded-full" />
+          <div className="w-3 h-3 sm:w-4 sm:h-4 bg-yellow-500 rounded-full" />
+          <div className="w-3 h-3 sm:w-4 sm:h-4 bg-green-500 rounded-full" />
+          <span className="text-gold font-mono text-base sm:text-lg ml-4 sm:ml-6 font-semibold">Aegis Terminal</span>
         </div>
 
         {/* Terminal Content */}
-        <div className="font-mono text-lg text-green-400 leading-relaxed min-h-[500px] w-full">
+        <div className="font-mono text-sm sm:text-base md:text-lg text-green-400 leading-relaxed min-h-[300px] sm:min-h-[400px] md:min-h-[500px] w-full">
           {allLines.map((line, index) => (
             <div key={index} className="mb-2">
               {isLink(line) ? (

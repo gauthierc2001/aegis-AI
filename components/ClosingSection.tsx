@@ -15,14 +15,14 @@ export default function ClosingSection() {
       {/* Content */}
       <motion.div
         ref={ref}
-        className="text-center z-10 px-6"
+        className="text-center z-10 px-4 sm:px-6"
         initial={{ opacity: 0, y: 40 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
       >
         {/* Lightning-fast gradient animated text */}
         <motion.h1
-          className="text-6xl md:text-8xl lg:text-9xl font-monument font-bold leading-tight"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-monument font-bold leading-tight"
           style={{
             background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 25%, #FFD700 50%, #FFA500 75%, #FFD700 100%)',
             backgroundSize: '200% 200%',

@@ -36,18 +36,18 @@ export default function VisionSection() {
   return (
     <motion.div
       ref={ref}
-      className="text-center px-6 max-w-6xl mx-auto"
+      className="text-center px-4 sm:px-6 max-w-6xl mx-auto"
       variants={containerVariants}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
     >
-      <div className="space-y-8">
+      <div className="space-y-6 sm:space-y-8">
         {visionWords.map((word, index) => (
           <motion.h2
             key={index}
             className="font-monument text-white leading-none"
             style={{
-              fontSize: 'clamp(3rem, 12vw, 8rem)',
+              fontSize: 'clamp(2rem, 8vw, 8rem)',
               fontWeight: 'normal',
             }}
             variants={wordVariants}

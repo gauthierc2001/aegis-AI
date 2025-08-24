@@ -63,145 +63,145 @@ export default function HeroSection({ isLoaded }: HeroSectionProps) {
 
   return (
     <motion.div
-      className="text-center px-6 max-w-6xl mx-auto"
+      className="text-center px-4 sm:px-6 max-w-6xl mx-auto"
       variants={containerVariants}
       initial="hidden"
       animate={isLoaded ? "visible" : "hidden"}
     >
              {/* Main Headline */}
        <motion.h1 
-         className="font-monument text-white mb-8 leading-tight flex flex-wrap justify-center items-center"
+         className="font-monument text-white mb-8 leading-tight flex flex-wrap justify-center items-center gap-2 sm:gap-4"
          style={{
-           fontSize: 'clamp(2.25rem, 8vw, 6rem)',
+           fontSize: 'clamp(1.5rem, 6vw, 6rem)',
            fontWeight: 'normal',
          }}
        >
          {/* "Where humans failed" */}
          <motion.span
-           className="inline-block mr-4"
+           className="inline-block"
            variants={wordVariants}
            custom={0}
          >
            Where
          </motion.span>
          <motion.span
-           className="inline-block mr-4"
+           className="inline-block"
            variants={wordVariants}
            custom={1}
          >
            humans
          </motion.span>
          <motion.span
-           className="inline-block mr-4"
+           className="inline-block"
            variants={wordVariants}
            custom={2}
          >
            failed
          </motion.span>
          
-                   {/* Failed Protocol Logos */}
-          <div className="flex items-center space-x-4 mx-4">
-            <motion.img
-              src="/safemoon.jpg"
-              alt="SafeMoon"
-              className="w-16 h-16 rounded-full object-cover"
-              animate={{
-                y: [0, -8, 0],
-                rotate: [0, 5, 0],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 0,
-              }}
-            />
-            <motion.img
-              src="/titano.png"
-              alt="Titano"
-              className="w-16 h-16 rounded-full object-cover"
-              animate={{
-                y: [0, -8, 0],
-                rotate: [0, -5, 0],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 0.5,
-              }}
-            />
-            <motion.img
-              src="/tomb.jpg"
-              alt="Tomb"
-              className="w-16 h-16 rounded-full object-cover"
-              animate={{
-                y: [0, -8, 0],
-                rotate: [0, 5, 0],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 1,
-              }}
-            />
-            <motion.img
-              src="/anchor.jpg"
-              alt="Anchor"
-              className="w-16 h-16 rounded-full object-cover"
-              animate={{
-                y: [0, -8, 0],
-                rotate: [0, -5, 0],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 1.5,
-              }}
-            />
-            <motion.img
-              src="/ohm.jpg"
-              alt="OHM"
-              className="w-16 h-16 rounded-full object-cover"
-              animate={{
-                y: [0, -8, 0],
-                rotate: [0, 5, 0],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 2,
-              }}
-            />
-          </div>
+         {/* Failed Protocol Logos - Mobile responsive */}
+         <div className="flex items-center space-x-2 sm:space-x-4 mx-2 sm:mx-4 order-first sm:order-none w-full sm:w-auto justify-center mb-4 sm:mb-0">
+           <motion.img
+             src="/safemoon.jpg"
+             alt="SafeMoon"
+             className="w-8 h-8 sm:w-16 sm:h-16 rounded-full object-cover"
+             animate={{
+               y: [0, -8, 0],
+               rotate: [0, 5, 0],
+             }}
+             transition={{
+               duration: 3,
+               repeat: Infinity,
+               ease: "easeInOut",
+               delay: 0,
+             }}
+           />
+           <motion.img
+             src="/titano.png"
+             alt="Titano"
+             className="w-8 h-8 sm:w-16 sm:h-16 rounded-full object-cover"
+             animate={{
+               y: [0, -8, 0],
+               rotate: [0, -5, 0],
+             }}
+             transition={{
+               duration: 3,
+               repeat: Infinity,
+               ease: "easeInOut",
+               delay: 0.5,
+             }}
+           />
+           <motion.img
+             src="/tomb.jpg"
+             alt="Tomb"
+             className="w-8 h-8 sm:w-16 sm:h-16 rounded-full object-cover"
+             animate={{
+               y: [0, -8, 0],
+               rotate: [0, 5, 0],
+             }}
+             transition={{
+               duration: 3,
+               repeat: Infinity,
+               ease: "easeInOut",
+               delay: 1,
+             }}
+           />
+           <motion.img
+             src="/anchor.jpg"
+             alt="Anchor"
+             className="w-8 h-8 sm:w-16 sm:h-16 rounded-full object-cover"
+             animate={{
+               y: [0, -8, 0],
+               rotate: [0, -5, 0],
+             }}
+             transition={{
+               duration: 3,
+               repeat: Infinity,
+               ease: "easeInOut",
+               delay: 1.5,
+             }}
+           />
+           <motion.img
+             src="/ohm.jpg"
+             alt="OHM"
+             className="w-8 h-8 sm:w-16 sm:h-16 rounded-full object-cover"
+             animate={{
+               y: [0, -8, 0],
+               rotate: [0, 5, 0],
+             }}
+             transition={{
+               duration: 3,
+               repeat: Infinity,
+               ease: "easeInOut",
+               delay: 2,
+             }}
+           />
+         </div>
          
          {/* "the machine will succeed" */}
          <motion.span
-           className="inline-block mr-4"
+           className="inline-block"
            variants={wordVariants}
            custom={3}
          >
            the
          </motion.span>
          <motion.span
-           className="inline-block mr-4"
+           className="inline-block"
            variants={wordVariants}
            custom={4}
          >
            machine
          </motion.span>
          <motion.span
-           className="inline-block mr-4"
+           className="inline-block"
            variants={wordVariants}
            custom={5}
          >
            will
          </motion.span>
          <motion.span
-           className="inline-block mr-4"
+           className="inline-block"
            variants={wordVariants}
            custom={6}
          >
@@ -212,7 +212,7 @@ export default function HeroSection({ isLoaded }: HeroSectionProps) {
          <motion.img
            src="/aegis.jpg"
            alt="Aegis Protocol"
-           className="w-16 h-16 rounded-full object-cover border-2 border-gold ml-4"
+           className="w-8 h-8 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-gold ml-2 sm:ml-4"
            animate={{
              y: [0, -12, 0],
              scale: [1, 1.1, 1],
@@ -227,7 +227,7 @@ export default function HeroSection({ isLoaded }: HeroSectionProps) {
 
       {/* Subline */}
       <motion.p
-        className="text-xl md:text-2xl text-gray-300 mb-12 font-inter"
+        className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 sm:mb-12 font-inter px-4"
         variants={itemVariants}
       >
         The first AI-managed DeFi protocol on Base.
@@ -235,21 +235,21 @@ export default function HeroSection({ isLoaded }: HeroSectionProps) {
 
              {/* CTA */}
        <motion.div
-         className="flex justify-center items-center"
+         className="flex justify-center items-center px-4"
          variants={itemVariants}
        >
          <motion.a
            href="https://x.com/protocol_aegis"
            target="_blank"
            rel="noopener noreferrer"
-           className="relative px-8 py-4 bg-gradient-to-r from-gold to-gold-dark text-black font-semibold rounded-lg overflow-hidden group flex items-center gap-3"
+           className="relative px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-gold to-gold-dark text-black font-semibold rounded-lg overflow-hidden group flex items-center gap-2 sm:gap-3 text-sm sm:text-base"
            whileHover={{ scale: 1.08 }}
            whileTap={{ scale: 0.98 }}
          >
            <div className="absolute inset-0 bg-gradient-to-r from-gold-light to-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
            <span className="relative z-10">Follow Aegis</span>
            <svg 
-             className="relative z-10 w-5 h-5" 
+             className="relative z-10 w-4 h-4 sm:w-5 sm:h-5" 
              fill="currentColor" 
              viewBox="0 0 24 24"
            >
